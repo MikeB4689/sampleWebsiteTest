@@ -1,0 +1,437 @@
+@media only screen and (min-width: 355px) {
+  body .container #top .overlay {
+    transform: translateX(-550px);
+  }
+  body .container footer {
+    padding: 0 10px;
+  }
+  body .container footer .footer-container .title {
+    display: flex;
+    align-items: center;
+  }
+  body .container footer .footer-container .title .log {
+    width: 35px;
+    height: 35px;
+  }
+  body .container footer .footer-container .title .titleformountain span {
+    line-height: 12px;
+    font-size: 12px;
+  }
+  body .container footer .footer-container .copyright span {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 455px) {
+  body .container #top .overlay {
+    transform: translateX(-450px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 3px;
+  }
+  body .container #mid .carousel .image-holder {
+    width: 60%;
+    box-shadow: 1px 2px 3px black;
+  }
+  body .container #mid .carousel .image-holder li {
+    width: 100%;
+  }
+  body .container #mid .carousel .image-holder li img {
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+@media only screen and (min-width: 555px) {
+  body .container #top .overlay {
+    transform: translateX(-410px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container footer {
+    padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 625px) {
+  body .container #top .overlay {
+    transform: translateX(-390px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 665px) {
+  body .container #top .overlay {
+    transform: translateX(-350px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  body .container #top .overlay {
+    transform: translateX(-330px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container #mid .content-container .mid-content h1 {
+    font-size: 120px;
+  }
+  body .container #mid .content-container .mid-content h1 span {
+    font-size: 100px;
+  }
+  body .container #mid .content-container .mid-content h1 span::after {
+    bottom: 40px;
+    font-size: 25px;
+  }
+  body .container #bot .bottomContainer .bottom-content {
+    flex-direction: row;
+    align-items: center;
+  }
+  body .container #bot .bottomContainer .bottom-content h1 {
+    font-size: 120px;
+  }
+  body .container #bot .bottomContainer .bottom-content h1 span {
+    font-size: 100px;
+  }
+  body .container #bot .bottomContainer .bottom-content h1 span::after {
+    font-size: 25px;
+    bottom: 40px;
+  }
+  body .container #bot .bottomContainer .bottom-content p {
+    height: 150px;
+    display: flex;
+    align-items: end;
+    font-size: 16px;
+  }
+  body .container footer .footer-container {
+    margin: 0 auto;
+  }
+  body .container footer .footer-container .title {
+    display: flex;
+    align-items: center;
+  }
+  body .container footer .footer-container .title .log {
+    width: 40px;
+    height: 40px;
+  }
+  body .container footer .footer-container .title .titleformountain span {
+    line-height: 13px;
+    font-size: 15px;
+  }
+  body .container footer .footer-container .copyright span {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 712px) {
+  body .container #top .overlay {
+    transform: translateX(-320px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container footer .footer-container {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 750px) {
+  body .container #top .overlay {
+    transform: translateX(-310px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 780px) {
+  body .container #top .overlay {
+    transform: translateX(-290px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container #mid .carousel {
+    gap: 5px;
+  }
+  body .container #mid .carousel span {
+    display: none;
+  }
+  body .container #mid .carousel .image-holder {
+    width: 90%;
+    box-shadow: none;
+  }
+  body .container #mid .carousel .image-holder #click {
+    display: none;
+  }
+  body .container #mid .carousel .image-holder li {
+    flex: 1;
+  }
+  body .container #mid .carousel .image-holder::after {
+    display: none;
+  }
+  body .container #mid .carousel .image-holder:hover {
+    box-shadow: none;
+    transform: scale(1);
+  }
+  body .container #bot .tab-contaner .tabONe .schedule {
+    background-color: white;
+    width: 400px;
+    left: 150px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule .date-venue .date li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule .date-venue .venue li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule {
+    background-color: white;
+    width: 400px;
+    left: 150px;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule .date-venue .date li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule .date-venue .venue li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 813px) {
+  body .container #top .overlay {
+    transform: translateX(-270px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container #mid .carousel span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 860px) {
+  body .container #top .overlay {
+    transform: translateX(-250px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  body .container #top .overlay {
+    transform: translateX(-230px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule {
+    width: 300px;
+    left: 200px;
+  }
+}
+@media only screen and (min-width: 945px) {
+  body .container #top .overlay {
+    transform: translateX(-210px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container footer .footer-container {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  body .container #top .overlay {
+    transform: translateX(-180px);
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 1044px) {
+  body .container #top .overlay {
+    width: 100%;
+    transform: translateX(0);
+  }
+  body .container #top .content-container .title {
+    width: 89%;
+    text-align: right;
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule {
+    width: 300px;
+    left: 250px;
+  }
+}
+@media only screen and (min-width: 1174px) {
+  body .container #top .content-container .title {
+    width: 95%;
+    text-align: right;
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule {
+    width: 300px;
+    left: 300px;
+  }
+}
+@media only screen and (min-width: 1368px) {
+  body .container #top .content-container .title {
+    width: 100%;
+    text-align: right;
+  }
+  body .container #top .content-container .title p {
+    font-size: 85px;
+    line-height: 65px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 2px;
+  }
+  body .container #bot .navMountainContainer .mountains-nav p a {
+    font-size: 20px;
+  }
+  body .container #bot .mountains-nav p a {
+    font-size: 25px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule {
+    background-color: white;
+    width: 400px;
+    left: 150px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule .date-venue .date li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule .date-venue .venue li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    left: 600px;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule .date-venue .date li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule .date-venue .venue li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 1490px) {
+  body .container #top .content-container {
+    max-width: 730px;
+  }
+  body .container #top .content-container .title {
+    width: 100%;
+    text-align: right;
+  }
+  body .container #top .content-container .title p {
+    font-size: 120px;
+    line-height: 90px;
+  }
+  body .container #top .content-container .title .mountain {
+    letter-spacing: 3px;
+  }
+  body .container #mid .carousel .image-holder {
+    width: 50%;
+  }
+  body .container #bot .mountains-nav p a {
+    font-size: 25px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule {
+    left: 600px;
+    width: 400px;
+    height: 400px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule .date-venue .date li {
+    font-size: 16px;
+  }
+  body .container #bot .tab-contaner .tabONe .schedule .date-venue .venue li {
+    font-size: 16px;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    left: 600px;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule .date-venue .date li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  body .container #bot .tab-contaner #tab2 .schedule .date-venue .venue li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=media.css.map */

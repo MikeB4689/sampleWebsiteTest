@@ -1,0 +1,931 @@
+@media only screen and (min-width:355px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-550px);
+                }
+            }
+
+            footer {
+                padding: 0 10px;
+
+                .footer-container {
+                    .title {
+                        display: flex;
+                        align-items: center;
+
+                        .log {
+                            width: 35px;
+                            height: 35px;
+                        }
+
+                        .titleformountain {
+                            span {
+                                line-height: 12px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .copyright {
+                        span {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (min-width:455px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-450px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
+            }
+
+            #mid {
+                .carousel {
+
+
+                    .image-holder {
+                        width: 60%;
+                        box-shadow: 1px 2px 3px black;
+
+                        li {}
+                    }
+
+                }
+            }
+
+            #mid {
+                .carousel {
+
+
+
+                    .image-holder {
+
+
+                        li {
+                            width: 100%;
+
+                            img {
+
+                                height: 100%;
+                                object-fit: fill;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:555px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-410px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+                padding: 0 20px;
+
+
+
+
+
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:625px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-390px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:665px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-350px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:700px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-330px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            #mid {
+                .content-container {
+                    .mid-content {
+                        h1 {
+                            font-size: 120px;
+
+                            span {
+                                font-size: 100px;
+                            }
+
+                            span::after {
+                                bottom: 40px;
+                                font-size: 25px;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            #bot {
+                .bottomContainer {
+                    .bottom-content {
+                        flex-direction: row;
+                        align-items: center;
+
+                        h1 {
+                            font-size: 120px;
+
+                            span {
+                                font-size: 100px;
+                            }
+
+                            span::after {
+                                font-size: 25px;
+                                bottom: 40px;
+                            }
+                        }
+
+                        p {
+
+                            height: 150px;
+                            display: flex;
+                            align-items: end;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+
+
+                .footer-container {
+
+                    margin: 0 auto;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+
+                        .log {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        .titleformountain {
+                            span {
+                                line-height: 13px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .copyright {
+                        span {
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:712px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-320px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+                .footer-container {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:750px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-310px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:780px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-290px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            #mid {
+                .carousel {
+
+                    gap: 5px;
+
+                    span {
+                        display: none;
+                    }
+
+                    .image-holder {
+                        width: 90%;
+                        box-shadow: none;
+
+                        #click {
+                            display: none;
+                        }
+
+                        li {
+                            flex: 1;
+                        }
+                    }
+
+                    .image-holder::after {
+                        display: none;
+                    }
+
+                    .image-holder:hover {
+                        box-shadow: none;
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            #bot {
+                .tab-contaner {
+                    .tabONe {
+                        .schedule {
+                            background-color: white;
+                            width: 400px;
+                            left: 150px;
+
+                            .date-venue {
+                                .date {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+
+                                }
+
+                                .venue {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    #tab2 {
+                        .schedule {
+                            background-color: white;
+                            width: 400px;
+                            left: 150px;
+
+                            .date-venue {
+                                .date {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+
+                                }
+
+                                .venue {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:813px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-270px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            #mid {
+                .carousel {
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:860px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-250px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:900px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-230px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            #bot {
+                .tab-contaner {
+                    .tabONe {
+                        .schedule {
+                            width: 300px;
+                            left: 200px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:945px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-210px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+                .footer-container {
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:990px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    transform: translateX(-180px);
+                }
+
+                .content-container {
+                    .title {
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1044px) {
+    body {
+        .container {
+            #top {
+                .overlay {
+                    width: 100%;
+                    transform: translateX(0);
+                }
+
+                .content-container {
+                    .title {
+                        width: 89%;
+                        text-align: right;
+
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            #bot {
+                .tab-contaner {
+                    .tabONe {
+                        .schedule {
+                            width: 300px;
+                            left: 250px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1174px) {
+    body {
+        .container {
+            #top {
+
+
+                .content-container {
+                    .title {
+                        width: 95%;
+                        text-align: right;
+
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            #bot {
+                .tab-contaner {
+                    .tabONe {
+                        .schedule {
+                            width: 300px;
+                            left: 300px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1368px) {
+    body {
+        .container {
+            #top {
+
+
+                .content-container {
+                    .title {
+                        width: 100%;
+                        text-align: right;
+
+                        p {
+                            font-size: 85px;
+                            line-height: 65px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            #bot {
+                .navMountainContainer {
+                    .mountains-nav {
+                        p {
+                            a {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                }
+
+                .mountains-nav {
+                    p {
+                        a {
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .tab-contaner {
+                    .tabONe {
+                        .schedule {
+                            background-color: white;
+                            width: 400px;
+                            left: 150px;
+
+                            .date-venue {
+                                .date {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+
+                                }
+
+                                .venue {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    #tab2 {
+                        .schedule {
+                            background-color: white;
+                            width: 400px;
+                            height: 400px;
+                            left: 600px;
+
+                            .date-venue {
+                                .date {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+
+                                }
+
+                                .venue {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1490px) {
+    body {
+        .container {
+            #top {
+
+
+                .content-container {
+
+                    max-width: 730px;
+
+                    .title {
+                        width: 100%;
+                        text-align: right;
+
+                        p {
+                            font-size: 120px;
+                            line-height: 90px;
+
+                        }
+
+                        .mountain {
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
+            }
+
+            #mid {
+                .carousel {
+                    .image-holder {
+                        width: 50%;
+                    }
+                }
+            }
+
+            #bot {
+
+                .mountains-nav {
+                    p {
+                        a {
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .tab-contaner {
+
+
+                    .tabONe {
+
+                        .schedule {
+
+
+                            left: 600px;
+                            width: 400px;
+                            height: 400px;
+
+                            .date-venue {
+                                .date {
+                                    li {
+                                        font-size: 16px;
+                                    }
+                                }
+
+                                .venue {
+                                    li {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    #tab2 {
+                        .schedule {
+                            background-color: white;
+                            width: 400px;
+                            height: 400px;
+                            left: 600px;
+
+                            .date-venue {
+                                .date {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+
+                                }
+
+                                .venue {
+                                    li {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}

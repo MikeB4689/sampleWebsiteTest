@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+body .container {
+  background-color: red;
+  min-width: 255px;
+  height: 100vh;
+  z-index: -1;
+}
+body .container #top {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+body .container #top .background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image-logos/top-image.jpg");
+  z-index: -1;
+  background-position: top center;
+}
+body .container #top .overlay {
+  bottom: 0;
+  width: 1200px;
+  height: 90vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  transform: translate(-600px);
+}
+body .container #top .overlay img {
+  width: 100%;
+  height: 100%;
+}
+body .container #top .content-container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 38.5vh;
+}
+body .container #top .content-container .hero {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+body .container #top .content-container .hero img {
+  width: 30px;
+  height: 30px;
+}
+body .container #top .content-container .hero nav {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .container #top .content-container .hero nav p a {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+body .container #top .content-container .hero nav p a:hover {
+  color: #414f6b;
+}
+body .container #top .content-container .title {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .container #top .content-container .title p {
+  font-size: 60px;
+  line-height: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #4d4d4d;
+}
+body .container #top .content-container .title .mountain {
+  color: #414f6b;
+  letter-spacing: 1px;
+}
+body .container #mid {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+body .container #mid .background {
+  background-image: url("../image-logos/mid-image.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+}
+body .container #mid .mid-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+  isolation: isolate;
+  transform: scaleY(0);
+  transition: 0.5s ease-in-out;
+}
+body .container #mid .mid-modal span {
+  background-color: red;
+  text-align: right;
+}
+body .container #mid .mid-modal span i {
+  font-size: 40px;
+  font-weight: 900;
+}
+body .container #mid .mid-modal #imageModal {
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
+  background-color: blue;
+  transform: scaleY(0);
+  transition: 0.5s ease-in-out;
+}
+body .container #mid .mid-modal #imageModal img {
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+body .container #mid .mid-modal::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  inset: 0;
+  opacity: 50%;
+  z-index: -1;
+}
+body .container #mid .top-mid-header {
+  padding: 0 10px;
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+body .container #mid .top-mid-header .midNavContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex: 1;
+}
+body .container #mid .top-mid-header .logo-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body .container #mid .top-mid-header .logo-title .logo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+body .container #mid .top-mid-header .logo-title .logo img {
+  width: 100%;
+  height: 100%;
+}
+body .container #mid .top-mid-header .logo-title .title-logo {
+  font-size: 13px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+body .container #mid .top-mid-header .logo-title .title-logo p {
+  color: #4d4d4d;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+body .container #mid .top-mid-header .logo-title .title-logo .mountain {
+  color: #414f6b;
+}
+body .container #mid .top-mid-header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body .container #mid .top-mid-header ul li {
+  list-style: none;
+}
+body .container #mid .top-mid-header ul li a {
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: #414f6b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+body .container #mid .top-mid-header ul li a:hover {
+  color: #4d4d4d;
+}
+body .container #mid .content-container {
+  max-width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+}
+body .container #mid .content-container .mid-content {
+  display: flex;
+  flex-direction: column;
+}
+body .container #mid .content-container .mid-content h1 {
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  align-items: baseline;
+  color: #6c7c97;
+}
+body .container #mid .content-container .mid-content h1 span {
+  font-size: 80px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+body .container #mid .content-container .mid-content h1 span::after {
+  content: "History";
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  padding-left: 2px;
+  color: #414f6b;
+}
+body .container #mid .content-container .mid-content p {
+  overflow: hidden;
+  height: 50px;
+  width: 100%;
+  margin-top: -20px;
+  padding-left: 40px;
+  font-size: 12px;
+  line-height: 12px;
+}
+body .container #mid .carousel {
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  isolation: isolate;
+}
+body .container #mid .carousel span {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  background-color: #a0a7b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+body .container #mid .carousel span i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+body .container #mid .carousel span i:hover {
+  background-color: #6c7c97;
+}
+body .container #mid .carousel .left-control {
+  left: 0;
+}
+body .container #mid .carousel .right-control {
+  right: 0;
+}
+body .container #mid .carousel .image-holder {
+  overflow: hidden;
+  width: 50%;
+  height: 100px;
+  position: relative;
+  display: flex;
+  transition: 0.3s ease;
+}
+body .container #mid .carousel .image-holder #click {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+body .container #mid .carousel .image-holder #click:hover {
+  opacity: 100%;
+  color: white;
+}
+body .container #mid .carousel .image-holder li {
+  flex: 1 0 100%;
+  height: 100%;
+  list-style-type: none;
+  opacity: 60%;
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+body .container #mid .carousel .image-holder li img {
+  width: 100%;
+  height: 100%;
+}
+body .container #mid .carousel .image-holder li.active {
+  opacity: 100%;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 7px black;
+}
+body .container #mid .carousel .image-holder::after {
+  content: " ";
+  position: absolute;
+  background-color: black;
+  inset: 0;
+  opacity: 50%;
+  width: 0%;
+  transition: 0.5s ease-in-out;
+}
+body .container #mid .carousel .image-holder:hover {
+  box-shadow: 1px 1px 3px black;
+  transform: scale(1.01);
+}
+body .container #mid .carousel .image-holder:hover::after {
+  width: 100%;
+}
+body .container #mid .carousel .dots {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+body .container #mid .carousel .dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #a0a7b5;
+  border-radius: 50%;
+  list-style-type: none;
+}
+body .container #mid .carousel .dots li.active {
+  background-color: black;
+}
+body .container #mid .carousel::after {
+  content: "";
+  position: absolute;
+  background-color: #414f6b;
+  inset: 0;
+  z-index: -1;
+  opacity: 50%;
+}
+body .container #bot {
+  width: 100%;
+  height: 100vh;
+}
+body .container #bot .bottomContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+body .container #bot .bottomContainer .bottom-content {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 80px;
+}
+body .container #bot .bottomContainer .bottom-content h1 {
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  align-items: baseline;
+  color: #a0a7b5;
+}
+body .container #bot .bottomContainer .bottom-content h1 span {
+  font-size: 80px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+body .container #bot .bottomContainer .bottom-content h1 span::after {
+  content: "CLIMB";
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  padding-left: 2px;
+  color: #414f6b;
+  font-weight: 800;
+}
+body .container #bot .bottomContainer .bottom-content p {
+  margin-top: -90px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+body .container #bot .navMountainContainer {
+  width: 100%;
+  background-color: #414f6b;
+}
+body .container #bot .navMountainContainer .mountains-nav {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 40px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+body .container #bot .navMountainContainer .mountains-nav p {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  color: #a0a7b5;
+  font-weight: 600;
+  cursor: pointer;
+}
+body .container #bot .navMountainContainer .mountains-nav p.active {
+  padding: 3px 10px;
+  background-color: #a0a7b5;
+  color: #414f6b;
+}
+body .container #bot .tab-contaner {
+  display: flex;
+  overflow: hidden;
+  height: 80vh;
+}
+body .container #bot .tab-contaner .tabONe {
+  flex: 1 0 100%;
+  position: relative;
+  height: 100vh;
+}
+body .container #bot .tab-contaner .tabONe .taboneImage {
+  background-image: url("../image-logos/bot-image-tab1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+body .container #bot .tab-contaner .tabONe .schedule {
+  isolation: isolate;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding-left: 20px;
+  width: 200px;
+}
+body .container #bot .tab-contaner .tabONe .schedule h1 {
+  font-family: "Oswald", sans-serif;
+  color: #414f6b;
+  text-transform: uppercase;
+}
+body .container #bot .tab-contaner .tabONe .schedule .date-venue {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+body .container #bot .tab-contaner .tabONe .schedule .date-venue .date li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+body .container #bot .tab-contaner .tabONe .schedule .date-venue .venue li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+body .container #bot .tab-contaner .tabONe .schedule:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  inset: 0;
+  z-index: -1;
+  opacity: 10%;
+}
+body .container #bot .tab-contaner #tab2 {
+  flex: 1 0 100%;
+  position: relative;
+}
+body .container #bot .tab-contaner #tab2 .taboneImage {
+  background-image: url("../image-logos/bot-image-tab2.jpg");
+  background-position: bottom right;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+body .container #bot .tab-contaner #tab2 .schedule {
+  isolation: isolate;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding-left: 20px;
+  width: 200px;
+}
+body .container #bot .tab-contaner #tab2 .schedule h1 {
+  font-family: "Oswald", sans-serif;
+  color: #414f6b;
+  text-transform: uppercase;
+}
+body .container #bot .tab-contaner #tab2 .schedule .date-venue {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+body .container #bot .tab-contaner #tab2 .schedule .date-venue .date li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+body .container #bot .tab-contaner #tab2 .schedule .date-venue .venue li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+body .container #bot .tab-contaner #tab2 .schedule:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  inset: 0;
+  z-index: -1;
+  opacity: 10%;
+}
+body .container footer {
+  position: absolute;
+  bottom: 1;
+  z-index: 999;
+  width: 100%;
+  height: 90px;
+  background-color: #414f6b;
+  display: flex;
+  align-items: center;
+}
+body .container footer .footer-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 50%;
+}
+body .container footer .footer-container .title {
+  display: flex;
+  gap: 4px;
+}
+body .container footer .footer-container .title .log {
+  width: 20px;
+  height: 20px;
+  background-image: url("../image-logos/logo.svg");
+  border-radius: 50%;
+}
+body .container footer .footer-container .title .titleformountain {
+  display: flex;
+  flex-direction: column;
+}
+body .container footer .footer-container .title .titleformountain span {
+  color: #a0a7b5;
+  line-height: 8px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 10px;
+}
+body .container footer .footer-container .title .titleformountain #footMount {
+  letter-spacing: 2px;
+}
+body .container footer .footer-container .copyright {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+body .container footer .footer-container .copyright span {
+  color: #a0a7b5;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+}/*# sourceMappingURL=index.css.map */

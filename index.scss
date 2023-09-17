@@ -1,0 +1,922 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+$text_color1: #414f6b;
+$text_color2: #4d4d4d;
+$text_colornumber1: #a0a7b5;
+$text_colornumber2: #414f6b;
+$nav_background: white;
+$text_color3: #6c7c97;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+
+    .container {
+
+        background-color: red;
+        min-width: 255px;
+        height: 100vh;
+        z-index: -1;
+
+
+        #top {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            .background {
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                background-image: url("../image-logos/top-image.jpg");
+                z-index: -1;
+                background-position: top center;
+
+            }
+
+            .overlay {
+
+                bottom: 0;
+                width: 1200px;
+                height: 90vh;
+                position: absolute;
+                bottom: 0;
+                z-index: 1;
+                transform: translate(-600px);
+
+
+
+
+
+                img {
+                    width: 100%;
+                    height: 100%
+                }
+            }
+
+            .content-container {
+                margin: 0 auto;
+                padding: 0 10px;
+
+                max-width: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                height: 38.5vh;
+
+                .hero {
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-right: 10px;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    nav {
+                        z-index: 10;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        p {
+                            a {
+                                font-family: 'Lato', sans-serif;
+                                font-size: 12px;
+                                color: white;
+                                font-weight: 500;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                cursor: pointer;
+                                transition: 0.5s ease;
+                            }
+
+                            a:hover {
+                                color: $text_color1;
+                            }
+                        }
+                    }
+                }
+
+                .title {
+
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+
+
+
+                    p {
+                        font-size: 60px;
+                        line-height: 45px;
+                        font-family: 'Bebas Neue', sans-serif;
+                        color: $text_color2;
+
+
+                    }
+
+                    .mountain {
+                        color: $text_color1;
+                        letter-spacing: 1px;
+                    }
+
+                }
+            }
+
+        }
+
+
+        #mid {
+
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: 0.5s ease;
+
+
+            .background {
+                background-image: url("../image-logos/mid-image.jpg");
+                width: 100%;
+                height: 100vh;
+                background-position: center;
+                position: absolute;
+                background-size: cover;
+                z-index: -1;
+
+            }
+
+            .mid-modal {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                position: relative;
+                isolation: isolate;
+                transform: scaleY(0);
+                transition: 0.5s ease-in-out;
+
+
+
+                span {
+
+
+                    background-color: red;
+                    text-align: right;
+
+                    i {
+                        font-size: 40px;
+                        font-weight: 900;
+                    }
+                }
+
+                #imageModal {
+                    width: 90%;
+                    margin: 0 auto;
+                    height: 200px;
+                    background-color: blue;
+                    transform: scaleY(0);
+                    transition: 0.5s ease-in-out;
+
+                    img {
+                        inset: 0;
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+
+            }
+
+            .mid-modal::after {
+                content: '';
+                position: absolute;
+                background-color: black;
+                inset: 0;
+                opacity: 50%;
+                z-index: -1;
+
+            }
+
+            .top-mid-header {
+                padding: 0 10px;
+                background-color: $nav_background;
+                height: 70px;
+                display: flex;
+                align-items: center;
+
+
+                .midNavContainer {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    height: 50px;
+                    display: flex;
+                    flex: 1;
+                }
+
+
+
+                .logo-title {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    .logo {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid black;
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                    }
+
+                    .title-logo {
+                        font-size: 13px;
+                        line-height: 12px;
+                        text-transform: uppercase;
+
+                        p {
+                            color: $text_color2;
+                            font-family: 'Lato', sans-serif;
+                            font-weight: 700;
+
+                        }
+
+                        .mountain {
+                            color: $text_color1;
+                        }
+                    }
+
+
+
+
+
+                }
+
+                ul {
+
+
+                    display: flex;
+                    align-items: center;
+
+                    justify-content: center;
+                    gap: 10px;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            font-size: 12px;
+                            font-family: 'Lato', sans-serif;
+                            color: $text_color1;
+                            font-weight: 600;
+                            cursor: pointer;
+                            transition: 0.5s ease;
+
+
+                        }
+
+                        a:hover {
+                            color: $text_color2;
+                        }
+
+                    }
+                }
+
+
+            }
+
+            .content-container {
+
+                max-width: 600px;
+                height: 100vh;
+                margin: 0 auto;
+
+                .mid-content {
+                    display: flex;
+                    flex-direction: column;
+
+
+                    h1 {
+                        font-size: 60px;
+                        font-family: 'Oswald', sans-serif;
+                        display: flex;
+                        align-items: baseline;
+                        color: $text_color3;
+
+
+
+                        span {
+                            font-size: 80px;
+                            position: relative;
+                            padding: 0;
+                            margin: 0;
+
+                        }
+
+                        span::after {
+                            content: 'History';
+                            position: absolute;
+                            bottom: 32px;
+                            left: 0;
+                            font-size: 16px;
+                            font-family: 'Oswald', sans-serif;
+                            padding-left: 2px;
+                            color: $text_colornumber2 ;
+
+
+
+                        }
+
+                    }
+
+                    p {
+                        overflow: hidden;
+
+                        height: 50px;
+                        width: 100%;
+                        margin-top: -20px;
+                        padding-left: 40px;
+                        font-size: 12px;
+                        line-height: 12px;
+
+                    }
+                }
+
+
+
+            }
+
+            .carousel {
+
+                width: 100%;
+                height: 150px;
+                align-items: center;
+
+
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                isolation: isolate;
+
+
+
+                span {
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    top: 40%;
+                    z-index: 10;
+                    background-color: $text_colornumber1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+
+
+                    i {
+                        font-size: 30px;
+                        color: white;
+                        cursor: pointer;
+                        transition: 0.5s ease;
+                    }
+
+                    i:hover {
+                        background-color: $text_color3;
+                    }
+
+                }
+
+                .left-control {
+                    left: 0;
+
+
+
+                }
+
+                .right-control {
+                    right: 0;
+
+                }
+
+                .image-holder {
+                    overflow: hidden;
+                    width: 50%;
+                    height: 100px;
+                    position: relative;
+                    display: flex;
+                    transition: 0.3s ease;
+
+                    #click {
+                        padding: 0;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 99;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        cursor: pointer;
+                        opacity: 0;
+                        transition: .5s ease;
+
+
+                    }
+
+                    #click:hover {
+                        opacity: 100%;
+                        color: white;
+                    }
+
+
+
+                    li {
+
+                        flex: 1 0 100%;
+                        height: 100%;
+                        list-style-type: none;
+
+                        opacity: 60%;
+                        transform: scale(.9);
+                        cursor: pointer;
+                        transition: .5s ease;
+
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                    }
+
+
+
+                    li.active {
+                        opacity: 100%;
+                        transform: scale(1.1);
+                        box-shadow: 1px 1px 7px black;
+
+                    }
+                }
+
+                .image-holder::after {
+                    content: ' ';
+                    position: absolute;
+                    background-color: black;
+                    inset: 0;
+                    opacity: 50%;
+                    width: 0%;
+                    transition: .5s ease-in-out;
+
+
+                }
+
+
+                .image-holder:hover {
+                    box-shadow: 1px 1px 3px black;
+                    transform: scale(1.01);
+
+                }
+
+                .image-holder:hover::after {
+                    width: 100%;
+
+                }
+
+                .dots {
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 1;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        width: 10px;
+                        height: 10px;
+                        background-color: $text_colornumber1;
+                        border-radius: 50%;
+                        list-style-type: none;
+
+                    }
+
+                    li.active {
+                        background-color: black;
+                    }
+
+                }
+            }
+
+            .carousel::after {
+
+                content: '';
+                position: absolute;
+                background-color: $text_color1;
+                inset: 0;
+                z-index: -1;
+                opacity: 50%;
+            }
+
+
+
+
+        }
+
+
+
+        #bot {
+            width: 100%;
+            height: 100vh;
+
+
+
+
+            .bottomContainer {
+                max-width: 600px;
+                margin: 0 auto;
+
+
+
+
+                .bottom-content {
+                    padding-left: 20px;
+                    display: flex;
+
+                    flex-direction: column;
+                    background-color: white;
+
+                    gap: 80px;
+
+
+                    h1 {
+                        font-size: 60px;
+                        font-family: 'Oswald', sans-serif;
+                        display: flex;
+
+                        align-items: baseline;
+                        color: $text_colornumber1;
+
+
+
+
+                        span {
+                            font-size: 80px;
+                            position: relative;
+                            padding: 0;
+                            margin: 0;
+
+                        }
+
+                        span::after {
+                            content: 'CLIMB';
+                            position: absolute;
+                            bottom: 32px;
+                            left: 0;
+                            font-size: 16px;
+                            font-family: 'Oswald', sans-serif;
+                            padding-left: 2px;
+                            color: $text_colornumber2 ;
+                            font-weight: 800;
+
+
+                        }
+
+                    }
+
+                    p {
+                        margin-top: -90px;
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+
+
+
+            }
+
+            .navMountainContainer {
+                width: 100%;
+                background-color: $text_colornumber2;
+
+                .mountains-nav {
+                    max-width: 600px;
+                    margin: 0 auto;
+
+                    height: 40px;
+
+                    padding-left: 20px;
+                    display: flex;
+                    align-items: center;
+
+                    gap: 60px;
+
+                    p {
+                        font-family: 'Oswald', sans-serif;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        text-decoration: none;
+                        color: $text_colornumber1;
+                        font-weight: 600;
+                        cursor: pointer;
+
+
+
+
+
+                    }
+
+                    p.active {
+                        padding: 3px 10px;
+                        background-color: $text_colornumber1;
+                        color: $text_color1;
+                    }
+                }
+
+            }
+
+
+
+            .tab-contaner {
+                display: flex;
+                overflow: hidden;
+                height: 80vh;
+
+
+                .tabONe {
+                    flex: 1 0 100%;
+                    position: relative;
+                    height: 100vh;
+
+
+
+
+                    .taboneImage {
+                        background-image: url("../image-logos/bot-image-tab1.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        width: 100%;
+                        height: 100vh;
+
+
+
+
+
+                    }
+
+                    .schedule {
+
+                        isolation: isolate;
+                        position: absolute;
+                        top: 100px;
+                        left: 20px;
+                        display: flex;
+                        flex-direction: column;
+
+                        height: 200px;
+                        padding-left: 20px;
+
+                        width: 200px;
+
+                        h1 {
+                            font-family: 'Oswald', sans-serif;
+                            color: $text_colornumber2;
+                            text-transform: uppercase;
+
+                        }
+
+                        .date-venue {
+                            padding: 10px;
+                            display: flex;
+
+                            justify-content: space-between;
+
+                            .date {
+                                li {
+                                    list-style: none;
+                                    margin-bottom: 20px;
+                                    font-size: 12px;
+                                }
+                            }
+
+                            .venue {
+                                li {
+                                    list-style: none;
+                                    margin-bottom: 20px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .schedule:after {
+                        content: '';
+                        position: absolute;
+                        background-color: white;
+                        inset: 0;
+                        z-index: -1;
+                        opacity: 10%;
+                    }
+
+
+                }
+
+                #tab2 {
+                    flex: 1 0 100%;
+                    position: relative;
+
+
+
+
+                    .taboneImage {
+
+                        background-image: url("../image-logos/bot-image-tab2.jpg");
+                        background-position: bottom right;
+                        background-size: cover;
+                        width: 100%;
+                        height: 100vh;
+
+
+
+
+                    }
+
+                    .schedule {
+
+                        isolation: isolate;
+                        position: absolute;
+                        top: 100px;
+                        left: 20px;
+                        display: flex;
+                        flex-direction: column;
+
+                        height: 200px;
+                        padding-left: 20px;
+
+                        width: 200px;
+
+                        h1 {
+                            font-family: 'Oswald', sans-serif;
+                            color: $text_colornumber2;
+                            text-transform: uppercase;
+
+                        }
+
+                        .date-venue {
+                            padding: 10px;
+                            display: flex;
+
+                            justify-content: space-between;
+
+                            .date {
+                                li {
+                                    list-style: none;
+                                    margin-bottom: 20px;
+                                    font-size: 12px;
+                                }
+                            }
+
+                            .venue {
+                                li {
+                                    list-style: none;
+                                    margin-bottom: 20px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .schedule:after {
+                        content: '';
+                        position: absolute;
+                        background-color: white;
+                        inset: 0;
+                        z-index: -1;
+                        opacity: 10%;
+                    }
+
+
+                }
+
+
+
+
+            }
+
+        }
+
+        footer {
+            position: absolute;
+            bottom: 1;
+            z-index: 999;
+            width: 100%;
+            height: 90px;
+            background-color: $text_color1;
+            display: flex;
+            align-items: center;
+
+
+
+            .footer-container {
+                width: 100%;
+
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                opacity: 50%;
+
+                .title {
+                    display: flex;
+                    gap: 4px;
+
+                    .log {
+                        width: 20px;
+                        height: 20px;
+                        background-image: url('../image-logos/logo.svg');
+
+                        border-radius: 50%;
+                    }
+
+                    .titleformountain {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            color: $text_colornumber1;
+                            line-height: 8px;
+                            text-transform: uppercase;
+                            font-weight: 100;
+                            font-size: 10px;
+                        }
+
+                        #footMount {
+                            letter-spacing: 2px;
+                        }
+
+                    }
+
+
+                }
+
+                .copyright {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+
+                    span {
+
+                        color: $text_colornumber1;
+                        font-size: 8px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
